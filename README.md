@@ -2,9 +2,13 @@
 
 A Chrome extension that shows quick Canada-vs-U.S. company info overlay on visited websites.
 
+## Demo
+
+Watch the Buy-Canadian Overlay in action:
 
 https://github.com/user-attachments/assets/cb56c586-4ccc-452a-a22a-9b126ed8fb6e
 
+*The extension automatically detects company domains and displays Canadian vs US information overlay.*
 
 ## Features
 
@@ -74,7 +78,7 @@ dist/                       # Built extension (load this in Chrome)
 ### Technologies Used
 
 - **React + TypeScript** - Component development
-- **Tailwind CSS** - Styling
+- **Vanilla CSS** - Styled to work on any website
 - **Vite** - Build tooling
 - **country-flag-icons** - SVG flag components
 
@@ -103,12 +107,12 @@ Then rebuild with `npm run build:extension`.
 - **Build fails**: Ensure all dependencies are installed with `npm install`
 - **Extension not loading**: Make sure you selected the `dist/` folder, not the project root
 
-## Demo
+## Features Demonstrated
 
 The extension demonstrates:
 - ✅ Domain detection and normalization
 - ✅ JSON data lookup  
 - ✅ React component injection
-- ✅ Tailwind styling
+- ✅ Vanilla CSS styling that works on any website
 - ✅ SVG flag icons
 - ✅ Chrome Extension Manifest V3 compatibility
