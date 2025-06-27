@@ -1,0 +1,107 @@
+/* Buy-Canadian Overlay Content Script Styles */
+
+/* Reset any potential conflicts with host page styles */
+#usaboycott-overlay {
+  all: initial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* Fixed positioning in bottom-right */
+  position: fixed !important;
+  bottom: 16px !important;
+  right: 16px !important;
+  
+  /* Size constraints */
+  width: 256px !important;
+  max-width: 256px !important;
+  
+  /* Styling */
+  background-color: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  padding: 16px !important;
+  
+  /* High z-index to stay on top */
+  z-index: 999999 !important;
+  
+  /* Prevent interference from host styles */
+  box-sizing: border-box !important;
+  line-height: 1.5 !important;
+  color: #374151 !important;
+  font-size: 14px !important;
+}
+
+#usaboycott-overlay * {
+  all: unset;
+  box-sizing: border-box !important;
+  font-family: inherit !important;
+}
+
+/* Main content container */
+#usaboycott-overlay .overlay-content {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+}
+
+/* Flag container */
+#usaboycott-overlay .flag-container {
+  flex-shrink: 0 !important;
+}
+
+/* Flag SVG styling */
+#usaboycott-overlay .flag-container svg {
+  width: 24px !important;
+  height: 16px !important;
+  display: block !important;
+}
+
+/* Content area */
+#usaboycott-overlay .content-area {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+/* Attributes list */
+#usaboycott-overlay .attributes-list {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  display: block !important;
+}
+
+#usaboycott-overlay .attributes-list li {
+  display: block !important;
+  font-size: 14px !important;
+  color: #374151 !important;
+  line-height: 1.4 !important;
+  margin: 0 0 4px 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  padding-left: 12px !important;
+}
+
+#usaboycott-overlay .attributes-list li:before {
+  content: "•" !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: #6b7280 !important;
+}
+
+/* Powered by section */
+#usaboycott-overlay .powered-by {
+  margin-top: 12px !important;
+  padding-top: 8px !important;
+  border-top: 1px solid #f3f4f6 !important;
+}
+
+#usaboycott-overlay .powered-by a {
+  font-size: 12px !important;
+  color: #6b7280 !important;
+  text-decoration: none !important;
+  display: inline !important;
+}
+
+#usaboycott-overlay .powered-by a:hover {
+  color: #374151 !important;
+} 
