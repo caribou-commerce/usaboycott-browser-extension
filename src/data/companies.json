@@ -1,0 +1,34 @@
+{
+  "sail.ca": {
+    "flag": "ca",
+    "attributes": [
+      "Headquarters in Canada",
+      "Products made in Canada",
+      "39% of employees based in Canada"
+    ]
+  },
+  "netflix.com": {
+    "flag": "us",
+    "attributes": [
+      "Headquarters in United States",
+      "5% of Netflix Originals filmed in Canada",
+      "2% of employees based in Canada"
+    ]
+  },
+  "crave.ca": {
+    "flag": "ca",
+    "attributes": [
+      "Headquarters in Canada",
+      "96% of Crave Originals filmed in Canada",
+      "95% of employees based in Canada"
+    ]
+  },
+  "mec.ca": {
+    "flag": "ca",
+    "attributes": [
+      "Headquarters in Canada",
+      "Sells some Canadian-made products",
+      "92% of employees based in Canada"
+    ]
+  }
+} 

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Buy-Canadian Overlay",
+  "version": "1.0.0",
+  "description": "Shows quick Canada-vs-U.S. company info overlay on visited sites",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icons/favicon.ico",
+    "48": "icons/favicon.ico",
+    "96": "icons/icon1.png",
+    "128": "icons/apple-icon.png",
+    "192": "icons/web-app-manifest-192x192.png"
+  }
+} 
