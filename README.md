@@ -2,6 +2,10 @@
 
 A Chrome extension that shows quick Canada-vs-U.S. company info overlay on visited websites.
 
+
+https://github.com/user-attachments/assets/cb56c586-4ccc-452a-a22a-9b126ed8fb6e
+
+
 ## Features
 
 - Detects website domains and shows Canadian/US company information
