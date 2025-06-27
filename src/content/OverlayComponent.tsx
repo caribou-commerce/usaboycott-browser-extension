@@ -1,5 +1,4 @@
 import React from 'react';
-import { CA, US } from 'country-flag-icons/react/3x2';
 
 interface CompanyData {
   flag: 'ca' | 'us';
@@ -11,14 +10,22 @@ interface OverlayComponentProps {
 }
 
 const OverlayComponent: React.FC<OverlayComponentProps> = ({ data }) => {
-  const FlagComponent = data.flag === 'ca' ? CA : US;
+  const flagCode = data.flag === 'ca' ? 'CA' : 'US';
   const flagTitle = data.flag === 'ca' ? 'Canada' : 'United States';
+  
+  // TODO: For production, consider bundling flag assets locally instead of external CDN
+  // This currently uses the GitHub Pages mirror for country-flag-icons
+  const flagUrl = `https://purecatamphetamine.github.io/country-flag-icons/3x2/${flagCode}.svg`;
 
   return (
     <div className="overlay-content">
       {/* Flag */}
       <div className="flag-container">
-        <FlagComponent title={flagTitle} />
+        <img 
+          src={flagUrl}
+          alt={flagTitle}
+          title={flagTitle}
+        />
       </div>
       
       {/* Content */}

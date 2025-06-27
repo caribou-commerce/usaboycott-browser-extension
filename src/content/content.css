@@ -49,11 +49,20 @@
   flex-shrink: 0 !important;
 }
 
-/* Flag SVG styling */
-#usaboycott-overlay .flag-container svg {
+/* Flag image styling */
+#usaboycott-overlay .flag-container img {
   width: 24px !important;
   height: 16px !important;
   display: block !important;
+  object-fit: cover !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 2px !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Flag container */
+#usaboycott-overlay .flag-container {
+  flex-shrink: 0 !important;
 }
 
 /* Content area */
