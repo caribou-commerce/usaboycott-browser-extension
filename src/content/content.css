@@ -37,8 +37,15 @@
   font-family: inherit !important;
 }
 
-/* Main content container */
+/* Main overlay container */
 #usaboycott-overlay .overlay-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+}
+
+/* Top row with flag and content side by side */
+#usaboycott-overlay .overlay-content-main {
   display: flex !important;
   align-items: flex-start !important;
   gap: 12px !important;
@@ -47,6 +54,7 @@
 /* Flag container */
 #usaboycott-overlay .flag-container {
   flex-shrink: 0 !important;
+  margin-top: 3px !important; /* Align flag with first bullet point */
 }
 
 /* Flag image styling */
@@ -58,11 +66,6 @@
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   border-radius: 2px !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12) !important;
-}
-
-/* Flag container */
-#usaboycott-overlay .flag-container {
-  flex-shrink: 0 !important;
 }
 
 /* Content area */
@@ -97,20 +100,35 @@
   color: #6b7280 !important;
 }
 
-/* Powered by section */
-#usaboycott-overlay .powered-by {
-  margin-top: 12px !important;
+/* Powered by container */
+#usaboycott-overlay .powered-by-container {
+  margin-top: 4px !important;
   padding-top: 8px !important;
   border-top: 1px solid #f3f4f6 !important;
 }
 
-#usaboycott-overlay .powered-by a {
+/* Powered by section */
+#usaboycott-overlay .powered-by {
+  display: flex !important;
+  gap: 4px !important;
   font-size: 12px !important;
   color: #6b7280 !important;
+}
+
+#usaboycott-overlay .powered-by span {
+  font-size: inherit !important;
+  color: inherit !important;
+}
+
+#usaboycott-overlay .powered-by a {
+  font-size: inherit !important;
+  color: #3b82f6 !important; /* Blue link color */
   text-decoration: none !important;
   display: inline !important;
+  font-weight: 500 !important;
 }
 
 #usaboycott-overlay .powered-by a:hover {
-  color: #374151 !important;
+  color: #1d4ed8 !important; /* Darker blue on hover */
+  text-decoration: underline !important;
 } 
